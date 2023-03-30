@@ -1,0 +1,53 @@
+/* 
+    #1e3d59,
+    #f5f0e1,
+    #ff6e40,
+    #ffc13b 
+        
+    Hex code: #26495c,
+        #c4a35a,
+        #c66b3d,
+        #e5e5dc;
+        */
+root {
+  --dark-dim-color: #26495c,
+  --dark-bright-color: #1e3d59,
+  --orange-dim-color:#c66b3d,
+  --orange-bright-color: #ff6e40,
+  --yellow-bright-color: #ffc13b,
+  --yellow-dim-color: #c4a35a,
+  --white-color:#f5f0e1,
+}
+
+     /* "gray": {
+       "50": "#EDF4F8",
+         "100": "#CCE0EA",
+         "200": "#ACCCDD",
+         "300": "#8CB7CF",
+         "400": "#6BA3C2",
+         "500": "#4B8FB4",
+         "600": "#3C7390",
+         "700": "#2D566C",
+         "800": "#1E3948",
+         "900": "#0F1D24"
+     }
+  
+     ,
+     "orange": {
+       "50": "#FFECE5",
+         "100": "#FFC9B8",
+         "200": "#FFA68A",
+         "300": "#FF835C",
+         "400": "#FF602E",
+         "500": "#FF3D00",
+         "600": "#CC3100",
+         "700": "#992500",
+         "800": "#661900",
+         "900": "#330C00"
+     } */
+  
+     
+body{
+  text-shadow: var(--dark-dim-color);
+  color: var(--orange-bright-color);
+}
