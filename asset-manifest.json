@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/InTrend/static/css/main.d8472ec4.css",
+    "main.js": "/InTrend/static/js/main.386d7fc6.js",
+    "static/js/542.47d787d6.chunk.js": "/InTrend/static/js/542.47d787d6.chunk.js",
+    "static/js/922.53a2b3d9.chunk.js": "/InTrend/static/js/922.53a2b3d9.chunk.js",
+    "static/js/183.0020c688.chunk.js": "/InTrend/static/js/183.0020c688.chunk.js",
+    "static/js/910.c7a0e366.chunk.js": "/InTrend/static/js/910.c7a0e366.chunk.js",
+    "static/js/267.61edfada.chunk.js": "/InTrend/static/js/267.61edfada.chunk.js",
+    "index.html": "/InTrend/index.html",
+    "static/media/like.svg": "/InTrend/static/media/like.029ac4a82116cde80d3bbd6e7cc7c4bb.svg",
+    "main.d8472ec4.css.map": "/InTrend/static/css/main.d8472ec4.css.map",
+    "main.386d7fc6.js.map": "/InTrend/static/js/main.386d7fc6.js.map",
+    "542.47d787d6.chunk.js.map": "/InTrend/static/js/542.47d787d6.chunk.js.map",
+    "922.53a2b3d9.chunk.js.map": "/InTrend/static/js/922.53a2b3d9.chunk.js.map",
+    "183.0020c688.chunk.js.map": "/InTrend/static/js/183.0020c688.chunk.js.map",
+    "910.c7a0e366.chunk.js.map": "/InTrend/static/js/910.c7a0e366.chunk.js.map",
+    "267.61edfada.chunk.js.map": "/InTrend/static/js/267.61edfada.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8472ec4.css",
+    "static/js/main.386d7fc6.js"
+  ]
+}
