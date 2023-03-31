@@ -2,7 +2,7 @@
   "name": "InTrend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://LarisaShatil.github.io/InTrend/",
+  "homepage": "https://LarisaShatil.github.io/InTrend",
   "dependencies": {
     "@chakra-ui/react": "^2.5.4",
     "@emotion/react": "^11.10.6",
@@ -27,7 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
