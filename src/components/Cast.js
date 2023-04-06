@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCastInfo } from 'services/services';
-
 import styled from 'styled-components';
+
+import Avatar from '../images/avatar-default.svg';
 
 const List = styled.ul`
   list-style: none;
@@ -39,7 +40,7 @@ const Cast = () => {
               src={
                 actor.profile_path
                   ? `https://image.tmdb.org/t/p/w500${actor.profile_path}`
-                  : `https://www.floridaorthosurgeons.com/wp-content/uploads/2016/09/no-image.jpg`
+                  : Avatar
               }
               alt={actor.name}
             ></PhotoItem>

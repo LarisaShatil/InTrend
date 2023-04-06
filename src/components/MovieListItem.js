@@ -7,7 +7,7 @@ export const MovieListItem = ({ movie }) => {
   const { title, name, poster_path, release_date, first_air_date
     , vote_average } = movie;
   const date = release_date ? release_date.slice(0, 4) : first_air_date.slice(0, 4);
-  console.log(Math.round(vote_average));
+
   return (
     <GridItem width='260px' ml='auto' mr='auto' _hover={{ padding:'2px' }} >
       <Card overflow='hidden' m='0 auto' >

@@ -3,12 +3,12 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <Box display='flex' lineHeight='1'>
-      <Box backgroundColor='orange.500' borderRadius='0.5rem' padding=' 0.1rem 0.2rem'>
-        <Heading color='white' lineHeight='0.8'>in</Heading>
+    <Box display='flex' alignItems='center'>
+      <Box backgroundColor='orange.500' borderRadius='0.5rem' padding=' 0rem 0.2rem 0.1rem'>
+        <Heading color='white' lineHeight='1'>in</Heading>
       </Box>
 
-      <Heading color='orange.500' lineHeight='1' marginLeft='0.2rem'>Trend</Heading>
+      <Heading color='orange.500' marginLeft='0.2rem'>Trend</Heading>
     </Box>
 
   )

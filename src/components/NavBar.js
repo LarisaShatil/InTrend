@@ -31,18 +31,22 @@ const NavItem = styled(NavLink)`
 
 export const NavBar = () => {
   return (
-    <div>
-      <Logo />
-      <Box display="grid" gridTemplateColumns="200px 1fr">
-        {navItems.map(({ href, text }) => (
-          <NavItem key={href} to={href}>
-            {text}
-          </NavItem>
-        ))}
+    <>
+      <Box display='flex' marginBottom='1rem' paddingBottom='0.5rem' borderBottom='1px solid white' >
+        <Logo />
+        <Box display='flex' marginLeft='auto' >
+          {navItems.map(({ href, text }) => (
+            <NavItem key={href} to={href}>
+              {text}
+            </NavItem>
+          ))}
+        </Box>
       </Box>
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-    </div>
+    </>
+
+
   );
 };
