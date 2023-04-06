@@ -3,6 +3,8 @@ import { NavLink, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { Box } from './Box';
+import { Heading, Textarea } from '@chakra-ui/react';
+import Logo from './Logo';
 
 const navItems = [
   { href: '/', text: 'Home' },
@@ -30,6 +32,7 @@ const NavItem = styled(NavLink)`
 export const NavBar = () => {
   return (
     <div>
+      <Logo />
       <Box display="grid" gridTemplateColumns="200px 1fr">
         {navItems.map(({ href, text }) => (
           <NavItem key={href} to={href}>

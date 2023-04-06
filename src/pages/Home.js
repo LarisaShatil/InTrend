@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <>
       <Box pt='10px' pb='10px'>
-        <Heading as='h2' textAlign='center' m='1rem 0' color='orange.600'>Trending today</Heading>
+        <Heading as='h2' textAlign='center' m='1rem 0' color='white'>Trending today</Heading>
         <MovieList movies={trendingMovies} />
       </Box>
 
