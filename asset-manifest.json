@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "/InTrend/static/css/main.d8472ec4.css",
-    "main.js": "/InTrend/static/js/main.da321e75.js",
+    "main.js": "/InTrend/static/js/main.b450cd65.js",
     "static/js/542.47d787d6.chunk.js": "/InTrend/static/js/542.47d787d6.chunk.js",
-    "static/js/922.9a4a7566.chunk.js": "/InTrend/static/js/922.9a4a7566.chunk.js",
-    "static/js/183.43d270bf.chunk.js": "/InTrend/static/js/183.43d270bf.chunk.js",
-    "static/js/262.b198b8e5.chunk.js": "/InTrend/static/js/262.b198b8e5.chunk.js",
+    "static/js/922.c87326b2.chunk.js": "/InTrend/static/js/922.c87326b2.chunk.js",
+    "static/js/319.4c02825e.chunk.js": "/InTrend/static/js/319.4c02825e.chunk.js",
+    "static/js/262.089b5b1f.chunk.js": "/InTrend/static/js/262.089b5b1f.chunk.js",
     "static/js/267.61edfada.chunk.js": "/InTrend/static/js/267.61edfada.chunk.js",
+    "static/media/404-not-found.png": "/InTrend/static/media/404-not-found.f2e9a8c403b3a5a3cdea.png",
     "static/media/left-arrow.svg": "/InTrend/static/media/left-arrow.ed92aa90dd649aad6079a9ea0e55420a.svg",
     "index.html": "/InTrend/index.html",
     "static/media/avatar-default.svg": "/InTrend/static/media/avatar-default.6b838e2974bdf27927934fa59a7c47cd.svg",
     "static/media/like.svg": "/InTrend/static/media/like.029ac4a82116cde80d3bbd6e7cc7c4bb.svg",
     "main.d8472ec4.css.map": "/InTrend/static/css/main.d8472ec4.css.map",
-    "main.da321e75.js.map": "/InTrend/static/js/main.da321e75.js.map",
+    "main.b450cd65.js.map": "/InTrend/static/js/main.b450cd65.js.map",
     "542.47d787d6.chunk.js.map": "/InTrend/static/js/542.47d787d6.chunk.js.map",
-    "922.9a4a7566.chunk.js.map": "/InTrend/static/js/922.9a4a7566.chunk.js.map",
-    "183.43d270bf.chunk.js.map": "/InTrend/static/js/183.43d270bf.chunk.js.map",
-    "262.b198b8e5.chunk.js.map": "/InTrend/static/js/262.b198b8e5.chunk.js.map",
+    "922.c87326b2.chunk.js.map": "/InTrend/static/js/922.c87326b2.chunk.js.map",
+    "319.4c02825e.chunk.js.map": "/InTrend/static/js/319.4c02825e.chunk.js.map",
+    "262.089b5b1f.chunk.js.map": "/InTrend/static/js/262.089b5b1f.chunk.js.map",
     "267.61edfada.chunk.js.map": "/InTrend/static/js/267.61edfada.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8472ec4.css",
-    "static/js/main.da321e75.js"
+    "static/js/main.b450cd65.js"
   ]
 }
