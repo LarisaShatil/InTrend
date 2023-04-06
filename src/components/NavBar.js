@@ -20,12 +20,12 @@ const NavItem = styled(NavLink)`
   height: 100%;
 
   &.active {
-    color: red;
+    color: orangered;
   }
 
   :hover:not(.active),
   :focus-visible:not(.active) {
-    color: red;
+    color: orangered;
   }
 `;
 
@@ -33,7 +33,9 @@ export const NavBar = () => {
   return (
     <>
       <Box display='flex' marginBottom='1rem' paddingBottom='0.5rem' borderBottom='1px solid white' >
-        <Logo />
+        <NavLink to={'/'}>
+          <Logo />
+        </NavLink>
         <Box display='flex' marginLeft='auto' >
           {navItems.map(({ href, text }) => (
             <NavItem key={href} to={href}>

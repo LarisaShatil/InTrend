@@ -37,7 +37,7 @@ export const getMovieById = async movieId => {
 
 export const getCastInfo = async movieId => {
   return await _axios
-    .get(`/movie/${movieId}/credits?api_key=${API_KEY}&limit=20`)
+    .get(`/movie/${movieId}/credits?api_key=${API_KEY}&limit=10`)
     .then(result => result.data.cast)
     .catch(err => console.log(err));
 };

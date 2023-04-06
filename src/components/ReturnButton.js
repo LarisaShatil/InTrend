@@ -11,9 +11,9 @@ export const ReturnButton = () => {
       to={location?.state?.from ?? '/'}
       type="button"
     >
-      <Box display='flex' marginLeft='1rem' width='1rem' _hover={{ width: '1.2rem', color: 'orange.500' }}>
+      <Box display='flex' width='1rem' fontWeight='500' _hover={{ width: '1.2rem', color: 'orange.500', fontWeight: '700' }}>
         <Image src={Arrow} width='inherit' marginRight='0.5rem' />
-        <Text display='inline' fontWeight='500'>back</Text>
+        <Text>back</Text>
       </Box>
     </NavLink>
   );

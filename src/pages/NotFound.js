@@ -1,14 +1,22 @@
+import { Image, Box, Heading, Text } from '@chakra-ui/react';
 import { ReturnButton } from 'components/ReturnButton';
+
+import Error from '../images/404-not-found.png';
 
 const NotFound = () => {
   return (
     <>
-      <ReturnButton />
-      <img
-        src="https://www.inzonedesign.com/wp-content/uploads/2021/02/blog-cleverly-funny-creative-404-error-pages-coolappse.jpg"
-        alt={'Not found'}
-        height="100%"
-      />
+
+      <Box display='flex' alignItems='center' justifyContent='center' marginTop='2rem'>
+        <Image src={Error} alt='Nothing was found' />
+        <Box>
+          <Heading>Oops! Something went wrong...</Heading>
+          <Text marginBottom='0.5rem'>Maybe it is time to go home?</Text>
+          <ReturnButton />
+        </Box>
+
+      </Box>
+
     </>
   );
 };

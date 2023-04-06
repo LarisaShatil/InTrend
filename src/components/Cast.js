@@ -30,7 +30,7 @@ const Cast = () => {
   if (!cast) {
     return null;
   }
-
+  console.log('cast', cast);
   return (
     <>
       <List>
@@ -45,6 +45,7 @@ const Cast = () => {
               alt={actor.name}
             ></PhotoItem>
             <h4>{actor.name}</h4>
+            <p>"{actor.character}"</p>
           </li>
         ))}
       </List>
