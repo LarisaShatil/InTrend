@@ -25,7 +25,7 @@ const NavItem = styled(NavLink)`
 
   :hover:not(.active),
   :focus-visible:not(.active) {
-    color: orangered;
+    color: #2D566C;
   }
 `;
 

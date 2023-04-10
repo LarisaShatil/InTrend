@@ -15,7 +15,6 @@ export const MovieCard = ({ movie }) => {
     genres,
   } = movie;
 
-  console.log('movie', movie, production_companies);
   const companyLogo = production_companies.length > 0 ? production_companies[0]['logo_path'] : false;
   const releaseDate = new Date(release_date);
   const [month, day, year] = [
@@ -60,7 +59,7 @@ export const MovieCard = ({ movie }) => {
           {overview && (
             <>
               <Heading as='h3' size='md' color='white' marginTop='0.5rem'>Overview: </Heading>
-              <ExpandableText text={overview} />
+              <ExpandableText text={overview} number={3} />
             </>
           )}
         </Box>

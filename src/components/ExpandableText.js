@@ -1,14 +1,14 @@
-import { Text } from '@chakra-ui/react';
 import React, { useState } from 'react'
+import { Text } from '@chakra-ui/react';
 
-const ExpandableText = ({ text }) => {
+const ExpandableText = ({ text, number }) => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
-  const ofLines = show ? 'auto' : [1, 2, 3];
+  const ofLines = show ? 'auto' : [number];
 
   return (
     <>
-      <Text noOfLines={ofLines} isOpen={show} onClick={handleToggle}>{text}</Text>
+      <Text color='inherit' fontSize='inherit' noOfLines={ofLines} onClick={handleToggle}>{text}</Text>
     </>
   )
 }

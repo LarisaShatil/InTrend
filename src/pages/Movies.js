@@ -7,8 +7,8 @@ export const Movies = () => {
 
   return (
     <>
-      {movieId ? <></> : <SearchForm/>}
-      <Outlet/>
+        {movieId ? <></> : <SearchForm />}
+      <Outlet />
     </>
   )
 };

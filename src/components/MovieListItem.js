@@ -9,15 +9,11 @@ export const MovieListItem = ({ movie }) => {
   const date = release_date ? release_date.slice(0, 4) : first_air_date.slice(0, 4);
 
   return (
-    <GridItem width='260px' ml='auto' mr='auto' _hover={{ padding:'2px' }} >
+    <GridItem width='260px' ml='auto' mr='auto' _hover={{ padding: '2px' }} >
       <Card overflow='hidden' m='0 auto' >
         <Image
-          objectFit='cover' 
-          src={
-            poster_path
-              ? `https://image.tmdb.org/t/p/w500${poster_path}`
-              : `http://blog.aspneter.com/Images/no-thumb.jpg`
-          }
+          objectFit='cover'
+          src={`https://image.tmdb.org/t/p/w500${poster_path}`}
           alt={title || name}
         />
         <CardBody p='4' minHeight='96px' >

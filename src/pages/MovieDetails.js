@@ -14,7 +14,7 @@ color: white;
 font-weight: 500;
 margin-right: 1rem;
 
-&:focus{
+&:focus:not(.active){
   color: #FF3D00;
 }
 

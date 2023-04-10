@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <Box display='flex' alignItems='center'>
+    <Box display='flex' alignItems='center' filter='blur(0.4px)'>
       <Box backgroundColor='orange.500' borderRadius='0.5rem' padding=' 0rem 0.2rem 0.1rem'>
         <Heading color='white' lineHeight='1'>in</Heading>
       </Box>

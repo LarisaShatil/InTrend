@@ -1,5 +1,7 @@
-ТЗ _Кінопошук_ Створи базову маршрутизацію для застосунку пошуку і зберігання
-фільмів.
+## inTrend App
+
+## Used:
+- React slick - a carousel component built with React.
 
 themoviedb.org API Для бекенду використовуй themoviedb.org API. Використовувати
 наступні ендпоінти.

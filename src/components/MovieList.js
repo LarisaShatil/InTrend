@@ -1,4 +1,4 @@
-import { Container, GridItem, Heading, SimpleGrid } from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 
 import { MovieListItem } from './MovieListItem';
@@ -14,7 +14,7 @@ export const MovieList = ({ movies }) => {
         >
           {movies.map(({ id, ...movie }) => {
             return (
-              <li key={id}>
+              movie.poster_path && <li key={id}>
                   <NavLink
                     to={`/movies/${id}`}
                     state={{ from: location }}
