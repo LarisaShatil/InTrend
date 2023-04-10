@@ -3,9 +3,8 @@ import { extendTheme } from '@chakra-ui/react'
 export const theme = extendTheme({
   styles: {
     global: {
-      'html, body': {
+      'body': {
         backgroundColor: 'blue.800',
-        padding: '0.5rem 2rem',
         lineHeight: 'tall',
         color: 'blue.100',
   
@@ -45,4 +44,7 @@ export const theme = extendTheme({
     },
     'white': '#f5f0e1',
   },
+  shadow: {
+    medium: 'rgba(50, 50, 93, 0.25) 0px 13px 27px - 5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
+  }
 })

@@ -1,9 +1,8 @@
 import { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-
 import { Box } from './Box';
-import { Heading, Textarea } from '@chakra-ui/react';
+
 import Logo from './Logo';
 
 const navItems = [
@@ -17,6 +16,7 @@ const NavItem = styled(NavLink)`
   padding: 10px;
   display: flex;
   text-decoration: none;
+  font-weight: bold;
   height: 100%;
 
   &.active {
@@ -32,23 +32,26 @@ const NavItem = styled(NavLink)`
 export const NavBar = () => {
   return (
     <>
-      <Box display='flex' marginBottom='1rem' paddingBottom='0.5rem' borderBottom='1px solid white' >
-        <NavLink to={'/'}>
-          <Logo />
-        </NavLink>
-        <Box display='flex' marginLeft='auto' >
-          {navItems.map(({ href, text }) => (
-            <NavItem key={href} to={href}>
-              {text}
-            </NavItem>
-          ))}
+      <Box width='100%' borderBottom='2px solid #2D566C' backgroundColor='#0F1D24' >
+        <Box display='flex' margin='auto' maxWidth='80%' padding='0.5rem 0 0.5rem' >
+          <NavLink to={'/'}>
+            <Logo />
+          </NavLink>
+          <Box display='flex' marginLeft='auto' >
+            {navItems.map(({ href, text }) => (
+              <NavItem key={href} to={href}>
+                {text}
+              </NavItem>
+            ))}
+          </Box>
         </Box>
+
       </Box>
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
+      <Box margin='auto' maxWidth='70%'>
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+      </Box>
     </>
-
-
   );
 };

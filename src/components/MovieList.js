@@ -1,4 +1,4 @@
-import { Container, GridItem, SimpleGrid } from '@chakra-ui/react';
+import { Container, GridItem, Heading, SimpleGrid } from '@chakra-ui/react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 
 import { MovieListItem } from './MovieListItem';

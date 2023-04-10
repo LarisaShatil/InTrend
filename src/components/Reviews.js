@@ -19,7 +19,7 @@ const Reviews = () => {
 
   return (
     <>
-    { reviews && reviews.length ? <ReviewItem reviews={reviews} /> : <h3>There is no review.</h3>}
+    { reviews && reviews.length ? <ReviewItem reviews={reviews} /> : <p>There is no review.</p>}
     </>
     )
 };

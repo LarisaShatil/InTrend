@@ -19,19 +19,18 @@ const Reviews = lazy(() => import('./Reviews'));
 export const App = () => {
   return (
     <>
-        <Routes>
-          <Route exact path="/" element={<NavBar />}>
-            <Route index element={<Home />} />
-            <Route path="movies" element={<Movies />}>
-              <Route path=":movieId" element={<MovieDetails />}>
-                <Route path="cast" element={<Cast />} />
-                <Route path="reviews" element={<Reviews />} />
-              </Route>
+      <Routes>
+        <Route exact path="/" element={<NavBar />}>
+          <Route index element={<Home />} />
+          <Route path="movies" element={<Movies />}>
+            <Route path=":movieId" element={<MovieDetails />}>
+              <Route path="cast" element={<Cast />} />
+              <Route path="reviews" element={<Reviews />} />
             </Route>
           </Route>
           <Route path="*" element={<NotFound />} />
-        </Routes>
-
+        </Route>
+      </Routes>
     </>
   );
 };
