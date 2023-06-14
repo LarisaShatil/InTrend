@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { getMovieByQuery } from "services/services";
-import { Box, Container, Input } from "@chakra-ui/react";
+import { Box, Container, Input, Image } from "@chakra-ui/react";
 
+import { getMovieByQuery } from "services/services";
 import { MovieList } from "./MovieList";
+import Arrow from '../images/left-arrow.svg';
+import Find from '../images/find.svg';
 
 export default function SearchForm() {
   const [query, setQuery] = useState('');
@@ -36,16 +38,18 @@ export default function SearchForm() {
 
   return (
     <>
-      <Container as='section' maxWidth='4xl' borderRadius='lg' p='4'>
+      <Container as='section' maxWidth='4xl' borderRadius='lg' p={['1', '4']}>
         <form onSubmit={onSubmit}>
-          <Box display='flex' m='0 auto' width='50%' alignItems='center'>
+          <Box display='flex' m='0 auto'
+            width={['80%', '70%', '60%', '50%',]}
+            alignItems='center' >
             <Input onChange={onChange}
-              mr='1rem'
+              mr='0.5rem'
               type='text'
               value={query}
               autoComplete='off' />
             <button type='submit'>
-              Search
+              <Image src={Find} width='2rem' />
             </button>
           </Box>
         </form>

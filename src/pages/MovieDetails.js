@@ -1,4 +1,3 @@
-// сторінка з детальною інформацією про кінофільм
 import { Suspense, useEffect, useState } from "react";
 import styled from "styled-components";
 import { Outlet, Link, useLocation, useParams } from "react-router-dom";
@@ -10,12 +9,12 @@ import { ReturnButton } from "../components/ReturnButton";
 import NotFoundBox from "components/NotFoundBox";
 
 const InfoLink = styled(Link)`
-color: white;
+  color: #FF3D00;
 font-weight: 500;
 margin-right: 1rem;
 
 &:focus:not(.active){
-  color: #FF3D00;
+  color: white;
 }
 
 &:hover,
