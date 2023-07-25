@@ -1,11 +1,11 @@
 ## inTrend App
 The App helps the User to be on the curve of the most popular movies. The User will find all vital info about the trending films at one place:
-/n✅ short description of the plot;
-/n✅ release date; 
-/n✅ movie's rating;
-/n✅ genres;
-/n✅ actors cast;
-/n✅ feedbacks.
+<br/>✅ short description of the plot;
+<br/>✅ release date; 
+<br/>✅ movie's rating;
+<br/>✅ genres;
+<br/>✅ actors cast;
+<br/>✅ feedbacks.
 
 ## There were used in the App:
 + themoviedb.org API for the backend;
