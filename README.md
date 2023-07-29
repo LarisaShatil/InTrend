@@ -10,4 +10,5 @@ The App helps the User to be on the curve of the most popular movies. The User w
 ## There were used in the App:
 + themoviedb.org API for the backend;
 + "expandable text" component for hiding/showing information;
++ scroll button;
 + React slick, a carousel component built with React.
