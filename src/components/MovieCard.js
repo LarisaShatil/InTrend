@@ -25,13 +25,14 @@ export const MovieCard = ({ movie }) => {
 
   return (
     <>
-      <Box display='flex'>
+      <Box display={{ base: 'box', md: 'flex'}}>
         <Box >
           <Image
             borderRadius='lg'
             objectFit='cover'
             maxWidth='480px'
             maxHeight='362px'
+            margin={{ base: '0 auto' }}
             src={
               poster_path
                 ? `https://image.tmdb.org/t/p/w500${poster_path}`
@@ -40,16 +41,21 @@ export const MovieCard = ({ movie }) => {
             alt={title || name}
           />
         </Box>
-        <Box ml='4' position='relative'>
-          <Heading as='h2' size='lg' >
-            {title || name}
-          </Heading>
+        <Box ml='4'>
+          <Box display='flex' mt={{ base: '1rem', md: '0' }}>
+            <Heading as='h2' size='lg' mr='1rem' >
+              {title || name}
+            </Heading>
+            {companyLogo && (
+              <Box maxWidth='4rem' ml='auto' position='relative'>
+                <Image maxWidth='4rem' maxHeight='4rem' ml='auto' position='absolute' top='0' left='0' src={`https://image.tmdb.org/t/p/w200${companyLogo}`} />
+              </Box>
+               
+            )}
+          </Box>
+
           {tagline && <Text as='cite'>{tagline}</Text>}
-          {companyLogo && (
-            <Box maxWidth='4rem' position='absolute' top='-1.5rem' right='1rem'>
-              <Image src={`https://image.tmdb.org/t/p/w200${companyLogo}`} />
-            </Box>
-          )}
+         
           <Heading as='h3' size='md' color='white' marginTop='0.5rem'>Release date: </Heading>
           <Text>{month} {day}, {year}</Text>
           <Heading as='h3' size='md' color='white' marginTop='0.5rem'>Rating: </Heading>

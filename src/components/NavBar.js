@@ -1,17 +1,18 @@
 import { Suspense } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import { Box } from './Box';
 
+import { Box } from './Box';
 import Logo from './Logo';
+import Footer from './Footer';
+import ScrollUp from './ScrollUp';
 
 const navItems = [
   { href: '/', text: 'Home' },
   { href: 'movies', text: 'Movies' },
 ];
 
-// when there are two classes on one component -   &.active
-
+//two classes on one component -   &.active
 const NavItem = styled(NavLink)`
   padding: 10px;
   display: flex;
@@ -32,6 +33,7 @@ const NavItem = styled(NavLink)`
 export const NavBar = () => {
   return (
     <>
+      <ScrollUp/>
       <Box width='100%' borderBottom='2px solid #2D566C' backgroundColor='#0F1D24' >
         <Box display='flex' margin='auto' maxWidth='80%' padding='0.5rem 0 0.5rem' >
           <NavLink to={'/'}>
@@ -45,12 +47,14 @@ export const NavBar = () => {
             ))}
           </Box>
         </Box>
-
       </Box>
-      <Box margin='auto' maxWidth='70%'>
+      <Box margin='auto' maxWidth='70%' pb='2rem' height='100%' minHeight='87vh'>
         <Suspense fallback={null}>
           <Outlet />
         </Suspense>
+      </Box>
+      <Box width='100%' borderTop='2px solid #2D566C' textAlign='center' p='0.5rem' m='0 auto'>
+        <Footer />
       </Box>
     </>
   );

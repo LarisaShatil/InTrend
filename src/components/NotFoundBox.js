@@ -18,4 +18,4 @@ const NotFoundBox = () => {
   )
 }
 
-export default NotFoundBox
+export default NotFoundBox;

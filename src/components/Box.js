@@ -8,6 +8,7 @@ import {
   background,
   border,
   height,
+  textAlign,
 } from 'styled-system';
 
 export const Box = styled('div')(
@@ -18,4 +19,5 @@ export const Box = styled('div')(
   background,
   border,
   height,
+  textAlign
 );

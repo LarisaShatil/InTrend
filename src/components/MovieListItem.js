@@ -9,7 +9,7 @@ export const MovieListItem = ({ movie }) => {
   const date = release_date ? release_date.slice(0, 4) : first_air_date.slice(0, 4);
 
   return (
-    <GridItem width='260px' ml='auto' mr='auto' _hover={{ padding: '2px' }} >
+    <GridItem width='260px' ml='auto' mr='auto' _hover={{ padding: '2px'}} >
       <Card overflow='hidden' m='0 auto' >
         <Image
           objectFit='cover'

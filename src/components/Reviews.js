@@ -1,9 +1,7 @@
-// інформація про огляди. Рендериться на сторінці MovieDetails
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 
 import { getReviewsInfo } from "services/services";
-
 import { ReviewItem } from "./ReviewItem";
 
 const Reviews = () => {

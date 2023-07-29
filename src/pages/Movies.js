@@ -8,10 +8,9 @@ export const Movies = () => {
 
   return (
     <>
-
       {movieId ? <></> :
         <>
-          <Heading as='h2' textAlign='center' m='1rem 1rem 0 0 ' color='white'>Find movie by name</Heading>
+          <Heading as='h2' textAlign='center' m='1rem 1rem 0 0 ' color='white' opacity='0.8'>Find movie by name</Heading>
           <SearchForm />
         </>
       }

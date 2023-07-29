@@ -49,7 +49,7 @@ export default function SearchForm() {
               value={query}
               autoComplete='off' />
             <button type='submit'>
-              <Image src={Find} width='2rem' />
+              <Image src={Find} width='3rem' p='0.1rem' _hover={{ p:'0.2rem', bg: 'orange.500', opacity:'0.8' }} borderRadius='full' alt='the search icon'/>
             </button>
           </Box>
         </form>

@@ -4,7 +4,6 @@ import ExpandableText from "./ExpandableText"
 import Avatar from '../images/avatar-default.svg';
 
 export const ReviewItem = ({ reviews }) => {
-
   return (
     <List spacing={3}>
       {reviews.map(review =>
@@ -20,7 +19,5 @@ export const ReviewItem = ({ reviews }) => {
         </ListItem>
       )}
     </List>
-
-
   )
 }
