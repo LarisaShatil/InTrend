@@ -1,4 +1,5 @@
 <h1>inTrend App</h1>
+
 The App helps the User *to be on the curve of the most popular movies*. 
 <br>Everyone will find all vital info about the trending films at one place:
 <br/> ▶️  short description of the plot;
@@ -7,7 +8,6 @@ The App helps the User *to be on the curve of the most popular movies*.
 <br/>▶️ genres;
 <br/>▶️ actors cast;
 <br/>▶️ feedbacks.
-<br/>
 <br/>
 
 *Examples:*
