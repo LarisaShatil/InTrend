@@ -4,7 +4,6 @@ import { Box, Container, Input, Image } from "@chakra-ui/react";
 
 import { getMovieByQuery } from "services/services";
 import { MovieList } from "./MovieList";
-import Arrow from '../images/left-arrow.svg';
 import Find from '../images/find.svg';
 
 export default function SearchForm() {
@@ -49,7 +48,7 @@ export default function SearchForm() {
               value={query}
               autoComplete='off' />
             <button type='submit'>
-              <Image src={Find} width='3rem' p='0.1rem' _hover={{ p:'0.2rem', bg: 'orange.500', opacity:'0.8' }} borderRadius='full' alt='the search icon'/>
+              <Image src={Find} width='3rem' p='0.1rem' _hover={{ p:'0.2rem' }} borderRadius='full' alt='the search icon'/>
             </button>
           </Box>
         </form>

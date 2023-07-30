@@ -3,51 +3,58 @@ import { Box } from "@chakra-ui/react";
 
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById('progress');
-  let progressValue = document.getElementById('progress-value');
   let pos = document.documentElement.scrollTop;
+
   let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos*100)/calcHeight)
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
   if (pos > 100) {
     scrollProgress.style.display = 'grid';
   } else {
     scrollProgress.style.display = 'none';
   }
+
   scrollProgress.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
-  })
+  });
+  scrollProgress.style.background = `conic-gradient(#FF602E ${scrollValue}%, #f5f0e1 ${scrollValue}%)`;
 }
 
 window.onscroll = calcScrollValue;
-window.onload=calcScrollValue;
+window.onload = calcScrollValue;
 
 const ScrollUp = () => {
   return (
     <Box id='progress'
       zIndex='12'
-      bg='blue.800'
       position='fixed'
+      display='grid'
+      placeItems='center'
+      cursor='pointer'
       bottom='5rem'
       right={{ base: '2rem', md: '3rem', lg: '5rem' }}
       height='3rem'
       width='3rem'
+      color='blue.700'
       borderRadius='50%'
       boxShadow='dark-lg'
-      display='grid'
-      placeItems='center'
-      border='3px solid white'
-      cursor='pointer'
-      _hover={{ bg: 'blue.900', border: '3px solid #FF3D00', color:'#FF3D00' }}
+      _hover={{ color: '#FF3D00' }}
     >
       <Box id='progress-value'
-        
-        // display='block'
-        // height='100%'
-        // width='100%'
-        // border='2px solid white'
-        // borderRadius='50%'
-        // m='auto'
-        // textAlign='center'
-      >Up</Box>
+        display='block'
+        height='calc(100% - 10px)'
+        width='calc(100% - 10px)'
+        background='#f5f0e1'
+        fontSize='2.2rem'
+        fontWeight='900'
+        lineHeight='0.9'
+        borderRadius='50%'
+        textAlign='center'
+        transform='rotate(180deg)'
+        _hover={{transform:'rotate(0deg)'}}
+      >
+        &#8593;
+      </Box>
     </Box>
   )
 }
