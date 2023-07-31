@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/InTrend/static/css/main.b5f22e40.css",
-    "main.js": "/InTrend/static/js/main.f18f680b.js",
+    "main.js": "/InTrend/static/js/main.ba2b6553.js",
     "static/js/500.45439fea.chunk.js": "/InTrend/static/js/500.45439fea.chunk.js",
     "static/js/922.9c6380a1.chunk.js": "/InTrend/static/js/922.9c6380a1.chunk.js",
     "static/js/536.f91b7684.chunk.js": "/InTrend/static/js/536.f91b7684.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/like.svg": "/InTrend/static/media/like.029ac4a82116cde80d3bbd6e7cc7c4bb.svg",
     "static/media/find.svg": "/InTrend/static/media/find.de27622983fb4375c655783ddc8f8a9d.svg",
     "main.b5f22e40.css.map": "/InTrend/static/css/main.b5f22e40.css.map",
-    "main.f18f680b.js.map": "/InTrend/static/js/main.f18f680b.js.map",
+    "main.ba2b6553.js.map": "/InTrend/static/js/main.ba2b6553.js.map",
     "500.45439fea.chunk.js.map": "/InTrend/static/js/500.45439fea.chunk.js.map",
     "922.9c6380a1.chunk.js.map": "/InTrend/static/js/922.9c6380a1.chunk.js.map",
     "536.f91b7684.chunk.js.map": "/InTrend/static/js/536.f91b7684.chunk.js.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.b5f22e40.css",
-    "static/js/main.f18f680b.js"
+    "static/js/main.ba2b6553.js"
   ]
 }
